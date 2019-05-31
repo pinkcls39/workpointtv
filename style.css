@@ -1,0 +1,502 @@
+@font-face {
+    font-family: 'ThaiSansNeue';
+    src: url('font/ThaiSansNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: 850px;
+}
+
+.container-bar {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+body {
+    background-image: url(img/theme/mainBg.png);
+    font-family: ThaiSansNeue;
+    font-size: 15pt;
+    padding-top: 60px;
+    color: #4a4a4a;
+}
+
+section {
+    margin: 50px 0px;
+}
+
+/*icon*/
+
+.icon {
+    background-image: url(img/theme/_sprite.png);
+    display: inline-block;
+    text-indent: -9999px;
+    transform: scale(0.8);
+}
+
+.icon-brand {
+    width: 313px;
+    height: 49px;
+    background-position: -50px -327px;
+}
+.icon-facebook {
+    width: 30px;
+    height: 30px;
+    background-position: -105px -112px;
+}
+.icon-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -346px -112px;
+}
+.icon-ig {
+    width: 30px;
+    height: 30px;
+    background-position: -306px -112px;
+}
+.icon-youtube {
+    width: 30px;
+    height: 30px;
+    background-position: -306px -152px;
+}
+
+.icon-logo {
+    width: 101px;
+    height: 80px;
+    background-position: -145px -65px;
+}
+
+.icon-play {
+    background-image: url(img/theme/Icon_play.png);
+    height: 78px;
+    width: 78px;
+}
+
+.icon-brand-black {
+    width: 280px;
+    height: 40px;
+    background-position: -5px -5px;
+}
+
+.icon-playclip {
+    width: 62px;
+    height: 62px;
+    background-position: -447px -163px;
+}
+
+.icon-playclip-sm {
+    width: 41px;
+    height: 41px;
+    background-position: -519px -163px;
+}
+
+.icon-livestream {
+    width: 62px;
+    height: 22px;
+    background-position: -335px -278px;
+}
+.icon-footer-facebook {
+    width: 40px;
+    height: 40px;
+    background-position: -355px -5px;
+}
+
+.icon-footer-twitter {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -112px;
+}
+
+.icon-footer-ig {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -112px;
+}
+
+.icon-footer-youtube {
+    width: 40px;
+    height: 40px;
+    background-position: -256px -112px;
+}
+
+.icon-footer-appstore {
+    width: 130px;
+    height: 36px;
+    background-position: -5px -55px;
+}
+
+.icon-footer-googleplay {
+    width: 115px;
+    height: 37px;
+    background-position: -256px -65px;
+}
+
+/*header*/
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.banner {
+    margin-top: -10px;
+}
+
+.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active{
+    z-index: 0;
+}
+
+.headerMain{
+    background-color: #083d78;
+    color: #a8a8a8;
+    position: relative;
+    height: 50px;
+    z-index: 50;
+
+}
+
+.hearderBrand {
+    float: left;
+    margin-left: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.hearderMenu {
+    float: right;
+    padding-right: 60px;
+    z-index: 50;
+    background-color: #2e3134;
+    position: relative;
+    width: 640px;
+    height: inherit;
+}
+
+.headerMain .headerMenuLeft:before {
+    content: '';
+    /*display: inline;*/
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    left: -20px;
+    width: 60px;
+    background-color: #2e3134;
+    transform: skew(-35deg);
+}
+
+.headerMain ul {
+    padding-top: 10px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.headerMenuLeft li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+.headerMenuRight li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 5px;
+}
+
+.headerMenuRight li {
+    opacity: .7;
+}
+
+.headerMenuLeft{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.headerMenuRight{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    display: inline-block;
+    border-left: 1px solid ;
+    padding-left: 1em;
+}
+
+.headerSecondary{
+    display: block;
+    background: rgba(0,0,0,.6);
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 18pt;
+    font-weight: bold;
+    vertical-align: middle;
+
+}
+
+.menubar nav {
+    display: table-cell;
+    padding: 0px 25px;
+}
+
+.programLive {
+    background-color: rgba(30,30,30,.6);
+    height: 49px;
+    border-left: 1px solid rgba(102, 102, 102, 0.44);
+    border-right: 1px solid rgba(102, 102, 102, 0.44);
+}
+
+.programContent {
+    border-right: 1px solid rgba(102, 102, 102, 0.44);
+}
+
+img.d-block{
+    /*height: 100%;*/
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*listLive*/
+.listLive {
+    margin-top: -400px;
+    z-index: 10;
+}
+
+.backgroundBoxLive {
+    position: relative;
+    background: #FFFFFF;
+    height:50px;
+    padding: 5px;
+}
+
+.backgroundBoxLive p {
+    position: absolute;
+    left: 65px;
+    top: 3px;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.backgroundBoxLive .iconPlay {
+    z-index: 10;
+    position: absolute;
+    left: -35px;
+    top: 10px;
+}
+
+.logoBoxLive {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.boxLive {
+    position: relative;
+    padding: 30px;
+    background-image: url(img/theme/nowShowingBG.png);
+    /*background-size: auto 100%;*/
+    color: #FFFFFF;
+    font-size: 20pt;
+    background-repeat: no-repeat;
+
+}
+
+.boxNow {
+    background: rgba(0,33,68,.5);
+    display: block;
+}
+
+.title {
+    line-height: 20px;
+    color: #ededed;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.textNow {
+    display: block;
+    color: #76ccd8;
+    font-weight: bold;
+    font-size: 21pt;
+}
+
+.textShowing {
+    display: block;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+.programNow {
+    font-size: 16pt;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.textProgram {
+    width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.boxListnow {
+    font-size: 16pt;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    vertical-align: top;
+}
+
+.boxListnow td{
+    vertical-align: top;
+}
+
+/* Handle */
+.boxListnow ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px
+}
+
+/*listReturn*/
+.bannerNews {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.boxReturn {
+    position: relative;
+    padding: 10px;
+    background-image: url(img/theme/rerunBG.png);
+    background-size: auto 750px;
+    height: 750px;
+    color: #FFFFFF;
+    font-size: 20pt;
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+
+.boxReturn .iconPlay {
+    z-index: 10;
+    position: absolute;
+    top: -30px;
+    left: 296px;
+    transform: scale(1.2);
+}
+
+.first .listReturnProgram i {
+    position: absolute;
+    z-index: 20;
+    top: 105px;
+    left: 170px;
+}
+
+.secondary .listReturnProgram i {
+    position: absolute;
+    z-index: 20;
+    top: 33px;
+    left: 73px;
+}
+
+.boxReturn p {
+    padding-left: 120px;
+    font-weight: bold;
+}
+
+/*list hot*/
+.backgroundBoxHot {
+    position: relative;
+    background: #FFFFFF;
+    height:45px;
+}
+
+.boxHot {
+    position: relative;
+    padding: 10px;
+    background-image: url(img/theme/hitsBG.png);
+    /*background-size: auto 100%;*/
+    color: #FFFFFF;
+    font-size: 20pt;
+    background-repeat: no-repeat;
+}
+
+.program {
+    padding: 20px;
+}
+
+.boxHot p {
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+figcaption{
+    font-size: 14pt;
+}
+
+.backgroundBoxHot .iconPlay {
+    z-index: 10;
+    position: absolute;
+    left: -35px;
+    top: 10px;
+}
+
+.listhotProgram i {
+    position: absolute;
+    z-index: 20;
+    top: 70px;
+    left: 165px;
+}
+
+figure figcaption {
+    /*text-decoration: none;*/
+    /*text-overflow: ellipsis; !* เพิ่ม ... จุดจุดจุดท้ายสุด *!*/
+    /*display: block; overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*width: 255px; !* กำหนดความกว้าง *!*/
+    /*-webkit-line-clamp: 2;*/
+}
+
+/*footer*/
+footer {
+    background: #FFFFFF;
+    padding:50px;
+    font-weight: bold;
+    font-size: 18pt;
+    color: #4a4a4a;
+}
+
+.policy {
+    color: #9f9f9f;
+    font-size: 15pt;
+    font-weight: normal;
+}
+
+.footerLeft>ul {
+    margin: 40px 0px 0px 0px;
+}
+
+footer ul {
+    padding: 0px;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+.footerInline li{
+    display:inline-block;
+}
+.footerLeft>ul>li>a{
+    color: #0a4b92;
+}
+.numberPhone {
+    font-size: 24pt;
+    color: #0c407a;
+    margin-bottom: 0;
+}
